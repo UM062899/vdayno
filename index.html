@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sad Valentine's Day</title>
+    <style>
+        body {
+            background-color: #FFFFCC;
+            font-family: 'Arial', sans-serif;
+            color: #2c3e50;
+            text-align: center;
+            padding: 50px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #e74c3c;
+        }
+
+        .gif-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .gif-container img {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 15px;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .heart {
+            color: #e74c3c;
+            font-size: 2em;
+        }
+
+        .floating {
+            position: absolute;
+            font-size: 2em;
+            animation: float 5s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-200px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+
+        .sad-face {
+            color: #e74c3c;
+        }
+
+        .broken-heart {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>No? 😢 💔</h1>
+
+    <div class="gif-container">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnpjdGlkYTRtM2o5a3ZkbjhkZGZoYWNibndxN3Z0bjl5NzQ3aWUxeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4ZRigpUcEOvMS04bTg/giphy.gif" alt="Sad Valentine's Day GIF">
+    </div>
+
+    <p class="message">Maybe next time.</p>
+
+    <p class="heart">&hearts;</p>
+
+    <!-- Floating Sad Faces and Broken Hearts -->
+    <div class="floating sad-face" style="top: 10%; left: 10%;">😢</div>
+    <div class="floating sad-face" style="top: 25%; left: 60%;">😢</div>
+    <div class="floating broken-heart" style="top: 40%; left: 30%;">💔</div>
+    <div class="floating sad-face" style="top: 60%; left: 80%;">😢</div>
+    <div class="floating broken-heart" style="top: 80%; left: 40%;">💔</div>
+
+</body>
+</html>
